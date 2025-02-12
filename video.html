@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Video</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black">
+
+    <!-- Header -->
+    <header class="bg-white p-3 border-b flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <!-- Burger Menu Toggle -->
+            <label for="menuToggle" class="p-2 bg-gray-200 rounded-lg cursor-pointer md:hidden">☰</label>
+            <input type="checkbox" id="menuToggle" class="hidden peer">
+            <a href="index.html">
+                <img src="https://i.pinimg.com/236x/7a/a5/6a/7aa56a308691c11ac0d350a3adbede91.jpg" alt="YouTube Logo" class="h-10">
+            </a>
+        </div>
+        <div class="flex-1 max-w-xl mx-auto">
+            <input type="text" placeholder="Search" class="w-full p-2 border rounded-lg">
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="p-2 bg-gray-200 rounded-full">🔍</button>
+            <button class="p-2 bg-gray-200 rounded-full">📷</button>
+            <button class="p-2 bg-gray-200 rounded-full">👤</button>
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="w-60 h-screen bg-gray-100 p-4 overflow-y-auto border-r fixed left-0 top-0 transform -translate-x-full peer-checked:translate-x-0 transition-transform md:relative md:translate-x-0">
+            <ul>
+                <li class="mb-2"><a href="index.html" class="block p-2 hover:bg-gray-200 rounded">Home</a></li>
+                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-200 rounded">Trending</a></li>
+                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-200 rounded">Subscriptions</a></li>
+                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-200 rounded">Library</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="max-w-4xl mx-auto p-4">
+            <!-- Video Placeholder -->
+            <div class="mb-4">
+                <img src="https://i.pinimg.com/736x/7f/63/36/7f63363c5accc0ae46a02d51f283781c.jpg" alt="Video Thumbnail" class="w-full rounded-lg">
+            </div>
+
+            <!-- Comments Section -->
+            <h2 class="text-xl font-bold mb-3">Comments</h2>
+            <div class="bg-gray-100 p-4 rounded-lg overflow-y-auto max-h-64 border">
+                <div class="mb-3 border-b pb-2">
+                    <p class="text-sm font-semibold">Mohammed</p>
+                    <p class="text-gray-600">This is an amazing video!</p>
+                </div>
+                <div class="mb-3 border-b pb-2">
+                    <p class="text-sm font-semibold">Khaled S</p>
+                    <p class="text-gray-600">I learned a lot from this.</p>
+                </div>
+                <div class="mb-3 border-b pb-2">
+                    <p class="text-sm font-semibold">withSalman</p>
+                    <p class="text-gray-600">Great content! Keep it up.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

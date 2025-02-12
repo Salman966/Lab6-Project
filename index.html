@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black">
+
+ <!-- Header -->
+<header class="bg-white p-3 border-b flex items-center justify-between">
+    <div class="flex items-center space-x-2">
+        <button class="p-2 bg-gray-200 rounded-full">☰</button>
+        <a href="index.html">
+            <img src="https://i.pinimg.com/236x/7a/a5/6a/7aa56a308691c11ac0d350a3adbede91.jpg" alt="YouTube Logo" class="h-10">
+        </a>
+        <span class="text-lg font-semibold">YouTube</span>
+    </div>
+
+    <!-- Search Bar in the Center -->
+    <div class="flex justify-center flex-1">
+        <input type="text" placeholder="Search" class="w-2/3 p-3 border rounded-lg">
+    </div>
+</header>
+
+
+    <div class="flex">
+        <!-- Sidebar  -->
+        
+        <div class="w-60 h-screen bg-gray-100 p-4 border-r overflow-y-auto block">
+
+            <ul class="space-y-2">
+                <li><a href="index.html" class="block p-2 hover:bg-gray-200 rounded font-semibold">🏠 Home</a></li>
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">▶️ Shorts</a></li>
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">📺 Subscriptions</a></li>
+            </ul>
+
+            <hr class="my-2 border-gray-300">
+
+            <p class="font-semibold p-2">You</p>
+            <ul class="space-y-2">
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">🕒 History</a></li>
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">📁 Playlists</a></li>
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">⏳ Watch Later</a></li>
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">👍 Liked Videos</a></li>
+            </ul>
+
+            <hr class="my-2 border-gray-300">
+
+            <p class="font-semibold p-2">Explore</p>
+            <ul class="space-y-2">
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">🔥 Trending</a></li>
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">🎵 Music</a></li>
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">📡 Live</a></li>
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">🎮 Gaming</a></li>
+                <li><a href="#" class="block p-2 hover:bg-gray-200 rounded">🏆 Sports</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-4">
+            <h1 class="text-2xl font-bold mb-4">Videos & Reels</h1>
+
+            <!-- 4 Videos (With Titles) -->
+            <h2 class="text-lg font-bold mb-2">Videos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                <div>
+                    <a href="video.html">
+                        <img src="https://i.pinimg.com/736x/7f/63/36/7f63363c5accc0ae46a02d51f283781c.jpg" alt="Video" class="w-full rounded-lg">
+                    </a>
+                    <a href="video.html" class="font-semibold mt-2 block">Google deepmind</a>
+                    <p class="text-gray-500 text-sm">Science Channel • 2.3M views • 1 day ago</p>
+                </div>
+                <div>
+
+                    <img src="https://i.pinimg.com/736x/a2/d0/c5/a2d0c5bb7a59439acd0a3fd92d5d7dc8.jpg" alt="Video" class="w-full rounded-lg">
+                    <p class="font-semibold mt-2">Top 10 Tech Gadgets</p>
+                    <p class="text-gray-500 text-sm">Tech World • 1.5M views • 3 days ago</p>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/236x/c6/90/4d/c6904de267778a2864debb5e4b41d85e.jpg" alt="Video" class="w-full rounded-lg">
+                    <p class="font-semibold mt-2">Kevin Durant news</p>
+                    <p class="text-gray-500 text-sm">Kevin Pro • 500K views • 2 weeks ago</p>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/736x/8d/e2/70/8de2700e90af18042cc2a165db871ec7.jpg" alt="Video" class="w-full rounded-lg">
+                    <p class="font-semibold mt-2"> Top Secret of content creation</p>
+                    <p class="text-gray-500 text-sm">Wanderlust • 800K views • 5 days ago</p>
+                </div>
+            </div>
+
+            <!-- 6 Reels  -->
+            <h2 class="text-lg font-bold mb-2">Shorts</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-6">
+                <img src="https://i.pinimg.com/236x/7b/94/f8/7b94f80f56644a3c327dd1ce5a55fe5c.jpg" alt="Reel" class="w-full rounded-lg">
+                <img src="https://i.pinimg.com/474x/b8/ca/51/b8ca515272079d017756cf022a3debda.jpg" alt="Reel" class="w-full rounded-lg">
+                <img src="https://i.pinimg.com/236x/18/cd/5b/18cd5b7e86f57777f7593902bbb55fc7.jpg" alt="Reel" class="w-full rounded-lg">
+                <img src="https://i.pinimg.com/236x/34/55/42/34554265a1ec5df780ac97f7d72150d0.jpg" alt="Reel" class="w-full rounded-lg">
+                <img src="https://i.pinimg.com/236x/0e/1b/59/0e1b59007caaa312d5f634aa42e06313.jpg" alt="Reel" class="w-full rounded-lg">
+                <img src="https://i.pinimg.com/474x/5d/ec/ec/5dececaaf4488c5a094720e13660c61f.jpg" alt="Reel" class="w-full rounded-lg">
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
